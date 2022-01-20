@@ -3,4 +3,7 @@ pt-BR:
   home:
     index:
       welcome: 'Boas vindas'
+      before_workers: 'Total de profissionais cadastrados: '
+      before_hirers: 'Total de contratantes cadastrados: '
+
       

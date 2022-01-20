@@ -6,11 +6,11 @@ services:
     tty: true
     volumes:
       - .:/freelancer-messager
-    command: bash -c "bin/setup && rails server -b 0.0.0.0 -p 3000"
+    command: bash -c "bin/setup && rails server -b 0.0.0.0 -p 5000"
     env_file:
       - .env
     ports:
-      - "3000:3000"
+      - "5000:5000"
     environment:
       TZ: Sao_Paulo/Sao_Paulo
     depends_on:
