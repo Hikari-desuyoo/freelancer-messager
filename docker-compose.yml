@@ -1,6 +1,7 @@
 version: '3.3'
 services:
   web:
+    container_name: freelancer-messager
     build: .
     stdin_open: true
     tty: true
@@ -27,7 +28,6 @@ services:
       TZ: Sao_Paulo/Sao_Paulo
     networks:
       - db_network
-    
 
 networks:
   hiring: 
