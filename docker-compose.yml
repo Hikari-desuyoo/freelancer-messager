@@ -6,15 +6,18 @@ services:
     tty: true
     volumes:
       - .:/freelancer-messager
-    command: bash -c "bin/setup && rails server -b 0.0.0.0 -p 5000"
+    command: bash -c "bin/setup && rails server -b 0.0.0.0 -p 4000"
     env_file:
       - .env
     ports:
-      - "5000:5000"
+      - "4000:4000"
     environment:
       TZ: Sao_Paulo/Sao_Paulo
     depends_on:
       - db
+    networks:
+      - hiring
+      - db_network
 
   db:
     image: postgres:13
@@ -22,3 +25,12 @@ services:
       - .env
     environment:
       TZ: Sao_Paulo/Sao_Paulo
+    networks:
+      - db_network
+    
+
+networks:
+  hiring: 
+    external: true
+  db_network:
+    external: false
