@@ -5,7 +5,7 @@ Freelancer messager é uma plataforma Web de troca de mensagens, que <b>não</b>
 O projeto utiliza Ruby 2.7.0 e Rails 6.1.4.1.
 Para preparar o projeto para execução, siga estes passos:
 ### 1. clonar o repositório
-`git clone https://github.com/Hikari-desuyoo/td7-projeto-final`
+`git clone https://github.com/Hikari-desuyoo/freelancer-messager`
 ### 2. criar o container com Docker
 `docker-compose build`
 
